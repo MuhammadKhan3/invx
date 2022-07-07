@@ -4,7 +4,7 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 const data = [
   {
     name: 'jan',
-    uv: 10,
+    uv: 30,
 
   },
   {
@@ -14,7 +14,7 @@ const data = [
   },
   {
     name: 'mar',
-    uv: 2000,
+    uv: 90,
   },
   {
     name: 'apr',
@@ -59,9 +59,10 @@ export default class Inventory extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer width="70%" height="80%">
+    <>
+      <ResponsiveContainer width="70%" height="80%" style={{float:'left'}}>
         <BarChart
-          width={500}
+          width={600}
           height={200}
           data={data}
           margin={{
@@ -70,14 +71,16 @@ export default class Inventory extends PureComponent {
             left: 20,
             bottom: 5,
           }}
+          barCategoryGap={16}
         >
           <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis type='number' domain={[10, 100]} allowDataOverflow={true}/>
           <Tooltip />
-          <Bar dataKey="uv" barSize={15} fill="#0891b2" style={{borderRadius:'105px'}} />
+
+          <Bar dataKey="uv"   barSize={15} fill="#60a5fa" plot style={{clipPath:'inset(0% 0% -2px 0% round 10px)'}} />
         </BarChart>
       </ResponsiveContainer>
-    );
+      </>);
   }
 }
