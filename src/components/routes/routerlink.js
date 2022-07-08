@@ -1,7 +1,9 @@
 import React from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import Chat from '../admin/chat';
 import Dashboard from '../admin/dashboard';
 import AdminHeader from '../admin/header';
+import Purchase from '../admin/Purchase';
 import CheckOut from '../checkout/checkout';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -22,6 +24,8 @@ const RouterLink = () => {
         <Route path='/footer' element={<Footer/>}/>
         <Route path='/admin-header' element={<AdminHeader/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/chat' element={<Chat/>}/>
+        <Route path='/purchase' element={<Purchase/>}/>
       
     </Routes>
   </>
