@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 
 
-const AdminHeader = ({setmenu}) => {
+const AdminHeader = ({setmenu,page}) => {
     const [sidemenu,setsidemenu]=useState(false);
   return (<>
   {/*Navbar & side menu */}
 <div>
   {/* side menu */}
-{sidemenu &&  <div className="z-50 w-[200px] inline-block h-full shadow-md bg-red-500 px-1  absolute float-left">
+{sidemenu &&  <div className={`z-50 w-[200px] inline-block  shadow-md bg-red-500 px-1  absolute float-left ${page==='productdetail' ? 'h-[970px]':'h-full'}`}>
     <h1 className='bg-white  ml-[20px] pl-2 w-[90px] font-bold rounded-md text-[25px] mt-[20px]'>Inv.X</h1>
   <ul className="relative text-white mt-5">
     <li className="relative btn btn-ghost w-[190px]">      
         <a className="flex items-center text-sm py-4 ml-[-56px] h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"><svg style={{color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-house-door-fill" viewBox="0 0 16 16"> <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" fill="white"></path> </svg> <span className=' text-white text-[12px] ml-[25px]'>Home</span></a>
     </li>
     <li className="relative btn btn-ghost w-[190px]">      
-        <a className="flex items-center text-sm py-4  h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"><svg style={{color: 'white'}}  xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="white"></path> </svg> <span className=' text-white ml-[25px] text-[12px]'>Inventory List</span></a>
+        <a className="flex items-center text-sm py-4  h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"><svg style={{color: 'white'}}  xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="white"></path> </svg> <span className=' text-white ml-[25px] text-[12px]'>Inventory List</span></a>
     </li>
     <li className="relative btn btn-ghost w-[190px]">      
         <a className="flex items-center ml-[-66px] text-sm py-4  h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"><svg style={{color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" className="bi bi-chat-fill" viewBox="0 0 16 16"> <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" fill="white"></path> </svg> <span className=' text-white ml-[25px] text-[12px]'>Chat</span></a>
@@ -30,6 +30,9 @@ const AdminHeader = ({setmenu}) => {
     </li>
     <li className="relative btn btn-ghost ml-[5px] w-[190px]">      
         <a className="flex  items-center ml-[-76px]  text-sm py-4  h-12 overflow-hidden text-white  text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-report-search" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <path d="M8 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h5.697" /> <path d="M18 12v-5a2 2 0 0 0 -2 -2h-2" /> <rect x="8" y="3" width="6" height="4" rx="2" /> <path d="M8 11h4" /> <path d="M8 15h3" /> <circle cx="16.5" cy="17.5" r="2.5" /> <path d="M18.5 19.5l2.5 2.5" /> </svg><span className='text-white ml-[28px]'>Report</span></a>
+    </li>
+    <li className="relative btn btn-ghost ml-[5px] w-[190px] mt-[280px]">      
+        <a className="flex  items-center ml-[-76px]  text-sm py-4  h-12 overflow-hidden text-white  text-ellipsis whitespace-nowrap rounded   transition duration-300 ease-in-out " href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">       <svg style={{color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-box-arrow-right" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" fill="white"></path> <path fillRule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" fill="white"></path> </svg><span className='text-white ml-[5px] text-[11px]'>Log Out</span></a>
     </li>
   </ul>
 </div>}
@@ -60,33 +63,34 @@ const AdminHeader = ({setmenu}) => {
       <li><a>Item 5</a></li>
       <li><a>Item 6</a></li>
     </ul>
-  </div>  <div className='navbar-start ml-[100px]  w-[50px] p-4 btn btn-ghost btn-circle'>
+  </div>  
+  <div className='navbar-start ml-[100px]  w-[50px] p-4 btn btn-ghost btn-circle'>
     <a><svg style={{color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bell-fill" viewBox="0 0 16 16"> <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" fill="white"></path> </svg></a>
   {/* profile */}
   </div>
   {/* close side bar */}
-  <div className="navbar-start  ml-[100px] float-left dropdown dropdown-end flex flex-row text-red-500">
+  <div className="navbar-start  ml-[80px] float-left dropdown dropdown-end flex flex-row text-red-500">
       <div className='text-white text-[12px]'>
           <p className='text-[13px]'>Ahmad Khan</p>
           <p  className='text-[12px]'>Administrator</p>
       </div>
-      <div className='ml-2'>
-          <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src="https://placeimg.com/80/80/people" />
-            </div>
-          </label>
-          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
-      </div>
+      <div className="dropdown dropdown-end text-red-500">
+      <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img src="https://placeimg.com/80/80/people" />
+        </div>
+      </label>
+      <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+          <a className="justify-between">
+            Profile
+            <span className="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+  </div>
   </div>
   </div>
 </div>

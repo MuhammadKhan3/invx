@@ -5,8 +5,7 @@ import Header from '../header/header'
 
 const ConfirmPayment= () => {
     const [favourite,setfavourite]=useState([]);
-  return (
-  <>
+  return (<>
    <div className=' h-[86rem]'>
         <Header/>
         <div className=' w-[350px] relative left-[400px] top-[60px] flex flex-row'>
@@ -92,7 +91,7 @@ const ConfirmPayment= () => {
             <h1 className='ml-[400px] mt-10 text-[25px] font-bold'>Related</h1>
             <div className='flex flex-row space-x-2 ml-[1000px] mt-[-32px]'>
               <div className='bg-gray-300 p-3 rounded-lg hover:bg-gray-600'>
-                <svg xmlns="http://www.w3.org/2000/svg" cla width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" cla width="16" height="16" fill="currentColor" className="bi bi-arrow-left" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> </svg>
               </div>
               <div className='bg-gray-300 p-3 rounded-lg hover:bg-gray-600'>
                 <svg style={{color: 'rgb(78, 77, 70)'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="#4e4d46"></path> </svg>

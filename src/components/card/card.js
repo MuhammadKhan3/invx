@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 
 const Card = ({title}) => {
     const [favourite,setfavourite]=useState([]);
-    console.log(favourite)
-  return (<>
+      return (<>
   <div>
                 <h1 className='text-[25px] font-bold mt-3'>{title}</h1>
   </div>

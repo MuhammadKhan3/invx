@@ -8,9 +8,11 @@ const Chat = () => {
    <AdminHeader setmenu={setsidemenu}/>
   {/* Dashboard */}
      <div className={`block relative  bg-gray-100 w-[1599px] h-[689px]  `}>
+        {/* div inner container */}
         <div className={`w-[1320px] h-[540px] relative flex flex-row flex-wrap ${sidemenu ? 'left-[200px]':''}`}>
             <div className='w-[1320px] h-[540px]'>
                 <h1 className='text-red-700 font-bold text-[25px] ml-[45px] mt-[35px]'>Ongoing Chat</h1>
+                {/* white box div */}
                 <div className='ml-[40px]  bg-white w-[1320px] h-[540px] mt-[30px]'>
                 {/* table */}
                 <div className="overflow-x-auto">
@@ -71,8 +73,10 @@ const Chat = () => {
                     </div>
                     {/* close table div */}
                 </div>
+                {/* close white box div */}
             </div>
         </div>
+        {/* close div inner container */}
     </div>
     </>)
 }
