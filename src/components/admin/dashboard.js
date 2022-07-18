@@ -52,14 +52,14 @@ const Dashboard = () => {
       {/* close Trend badges component */}
 
           <div className='flex flex-col   space-y-2  relative mt-10 ml-[50px] h-[200px] '>
-            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-red-600 hover:text-white active:scale-[1.1]'>
+            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-primary hover:text-white active:scale-[1.1]'>
               Yearly
             </button>
-            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-red-600 hover:text-white active:scale-[1.1]'>
+            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-primary hover:text-white active:scale-[1.1]'>
               Monthly
             </button>
             
-            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-red-600 hover:text-white active:scale-[1.1]'>
+            <button className='bg-gray-300  p-1 pl-6 pr-6  rounded-lg hover:bg-primary hover:text-white active:scale-[1.1]'>
               Daily
             </button>
           </div>
@@ -206,7 +206,7 @@ const Dashboard = () => {
                     {/* close Total Member list 3 */}
                 </div>
                       {/* New Member */}
-                      <div className='bg-red-600 rounded-2xl text-white mt-[30px] p-2'>
+                      <div className='bg-primary rounded-2xl text-white mt-[30px] p-2'>
                           <div className='inline-grid grid-rows-1 grid-cols-4 ml-[20px] mt-[5px] '>
                           <div className='w-[70px] text-[14px] '>
                             <h1>New Member</h1>

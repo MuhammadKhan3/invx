@@ -8,16 +8,16 @@ const [sidemenu,setsidemenu]=useState(false);
     <div className={`block relative  bg-gray-50 w-auto h-[690px]  `}>
         {/* div inner container */}
         <div className={`w-[1320px] h-[540px] relative flex  flex-row flex-wrap ${sidemenu ? 'left-[200px]':''}`}>
-            <h1 className='text-red-600 text-[20px] ml-[30px] mt-[30px] font-bold'>Import Inventory From Excel</h1>
+            <h1 className='text-gray-600 text-[20px] ml-[30px] mt-[30px] font-bold'>Import Inventory From Excel</h1>
             {/* Stepper */}
             <ul className="space-x-[80px] mt-[20px] relative left-[350px]">
                 <button className='bg-blue-400 text-white p-2 '>Upload</button>
-                <hr className='border-red-500 relative top-[-24px]'/>
+                <hr className='border-gray-500 relative top-[-24px]'/>
                 <br/>
                 {/* p-2 absolute top-4 left-[100px] w-[150px] mt-[-15px] */}
                 <button className='bg-blue-200 text-white  relative left-[160px] top-[-64px] p-2'>Align Column</button>
                 {/* absolute top-4 left-[400px] w-[150px] mt-[-15px] */}
-                <hr className='border-red-500 w-[160px] relative top-[-85px] left-[270px]'/>
+                <hr className='border-gray-500 w-[160px] relative top-[-85px] left-[270px]'/>
                 <button className='bg-blue-200 text-white p-2 relative left-[430px] top-[-103px]'>Upload </button>
             </ul>
             {/* Close Stepper */}
@@ -33,7 +33,7 @@ const [sidemenu,setsidemenu]=useState(false);
                     <br/>
                     <p className='ml-[50px]'>No File Choosen</p>
                     <p>A maximum 100 files import record</p>
-                    <p><a className='text-red-600'>Click here</a>to download the sample files</p>
+                    <p><a className='text-gray-600'>Click here</a>to download the sample files</p>
                     </div>
                 </div>  
               </label>

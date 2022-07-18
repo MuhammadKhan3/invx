@@ -1,26 +1,33 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import AdminHeader from './header';
 import ProductComponent from './productcomponent';
+import Queries from './queries';
 
 const AdminProductDetails = () => {
     const [sidemenu,setsidemenu]=useState(false);
     const [innernavbar,setnavbar]=useState('detail');
+    const [query,setquery]=useState(false);
     return (<>
    <AdminHeader setmenu={setsidemenu} page={'productdetail'}/>
+   {query &&
+   <Queries/>
+   }
    <div className={`block relative  bg-gray-50 w-auto h-[900px]  `}>
         {/* div inner container */}
         <div className={`w-[1320px] h-[540px] relative flex  flex-row flex-wrap ${sidemenu ? 'left-[200px]':''}`}>
             <div className='w-[1320px] h-[540px] mt-[10px]'>
-                <h1 className='text-red-700 font-bold text-[22px] ml-[45px] mt-[5px] inline'>Product detail </h1>
-                
+                <h1 className='text-gray-700 font-bold text-[22px] ml-[45px] mt-[5px] inline'>Product detail </h1>
                 {/* Start Select Menu */}
-                <select className="select-primary bg-blue-400 text-white focus:outline-none p-2 select-bordered relative left-[1030px]">
+                <button className='select-primary bg-blue-400 text-white focus:outline-none p-2 select-bordered relative left-[1030px]'  onClick={()=>{setquery(true)}}>View More</button>
+                {/*drop down  */}
+                {/* <select className="" >
                     <option>View More</option>
                     <option>Marge</option>
                     <option>Bart</option>
                     <option>Lisa</option>
                     <option>Maggie</option>
-                </select>
+                </select> */}
                 {/* Close Select Menu */}
                 <div className='bg-pink-50 ml-[45px] mt-[10px] w-[1320px] h-[110px]'>
                     {/* Avatar */}
@@ -63,7 +70,7 @@ const AdminProductDetails = () => {
                 <div className='50 ml-[45px] w-[1320px] bg-stone-100 text-gray-400 h-[30px] space-x-4'>
                     <div>
                         <div onClick={()=>{setnavbar('detail')}} className={`inline float-left ml-[10px] hover:border-b-4 border-b-gray-700 ${innernavbar==='detail' ? 'border-b-4 border-b-gray-700':''}`}>
-                          <svg style={{ color:' rgb(156, 163, 175)',display:'inline'}}  xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="#9ca3af"></path> </svg>
+                          <svg style={{ color:' rgb(156, 163, 175)',display:'inline'}}  xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-list-ul" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="#9ca3af"></path> </svg>
                           <button className='ml-[6px]' >Details</button>
                         </div>
                         <div  onClick={()=>{setnavbar('location')}} className={`inline float-left ml-[30px] hover:border-b-4 border-b-gray-700 ${innernavbar==='location' ? 'border-b-4 border-b-gray-700':''}`}>
@@ -71,7 +78,7 @@ const AdminProductDetails = () => {
                           <button className='ml-[6px] inline float-left'>Stock Location</button>
                         </div>
                         <div onClick={()=>{setnavbar('movement')}} className={`inline float-left ml-[30px] hover:border-b-4 border-b-gray-700 ${innernavbar==='movement' ? 'border-b-4 border-b-gray-700':''}`}>
-                           <svg style={{ color: 'rgb(156, 163, 175)',display:'inline',float:'left',marginTop:'4px'}} width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v3.764a2 2 0 0 0 1.106 1.789L16 14" fill="#9ca3af"></path></svg>
+                           <svg style={{ color: 'rgb(156, 163, 175)',display:'inline',float:'left',marginTop:'4px'}} width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></circle><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 7v3.764a2 2 0 0 0 1.106 1.789L16 14" fill="#9ca3af"></path></svg>
                            <button className=' ml-[6px] inline float-left'>Stock Movement</button>
                         </div>
                         <div onClick={()=>{setnavbar('feedback')}} className={`inline float-left ml-[30px] hover:border-b-4 border-b-gray-700 ${innernavbar==='feedback' ? 'border-b-4 border-b-gray-700':''}`}>

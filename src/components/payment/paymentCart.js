@@ -4,6 +4,7 @@ import React from 'react'
 import Card from '../card/card'
 import { useState } from 'react'
 import Header from '../header/header'
+import { Link } from 'react-router-dom'
 
 const PaymentCart = () => {
     const [favourite,setfavourite]=useState([]);
@@ -13,9 +14,9 @@ const PaymentCart = () => {
         <Header/>
         <div className=' w-[350px] relative left-[400px] top-[60px] flex flex-row'>
            <div className='w-[350px]'>
-                <h1 className='text-red-600  font-bold text-[25px] inline-block float-left'>DETAIL PRODUCT</h1>
+                <h1 className='text-gray-600  font-bold text-[25px] inline-block float-left'>DETAIL PRODUCT</h1>
                 {/* Bread Crumbs */}
-                <div className="w-auto text-sm breadcrumbs text-red-500 text-[13px] inline-block ml-[300px] mt-[-15rem]" >
+                <div className="w-auto text-sm breadcrumbs text-gray-500 text-[13px] inline-block ml-[300px] mt-[-15rem]" >
                     <ul>
                         <li><a>Long text 1</a></li>
                         <li><a>Long text 2</a></li>
@@ -26,7 +27,7 @@ const PaymentCart = () => {
                 <hr className='w-[650px]'/>
                     <div className="w-[300px]">
                         <label className="label">
-                            <p className="label-text font-bold  text-[16px]">Shipping information<span className='text-red-600 ml-[72px]'><a>Change</a></span></p> 
+                            <p className="label-text font-bold  text-[16px]">Shipping information<span className='text-gray-600 ml-[72px]'><a>Change</a></span></p> 
                         </label> 
                         <div className='w-[350px] h-[150px] bg-slate-100 mt-3'>
                             <p className='ml-5 mt-5 p-2 text-gray-400'>Contact <span className='text-black'>0303944444</span></p>
@@ -60,7 +61,9 @@ const PaymentCart = () => {
                               <input type="radio" name="radio-1" className="radio radio-sm" id='creditline' /><label htmlFor='creditline' className='text-[14px]  relative top-[-4px] ml-4'>Payment via line of credit </label> */}
                             </div>
                             <div className='ml-[220px] mt-4 w-[190px]'>
-                                <button className="btn btn-error text-white hover:bg-red-600 ">Proceed Further</button>
+                                <Link to='/payment'>
+                                  <button className="btn btn-primary  ">Proceed Further</button>
+                                </Link>
                             </div>
                         </div>
                         {/* close radion buton component */}
@@ -77,7 +80,7 @@ const PaymentCart = () => {
                     <h1 className='text-[13px] font-bold'>Sample PRODUCT</h1>
                     <h1 className='text-[13px] font-bold'>Color : Red</h1>
                     <h1 className='text-[13px] font-bold'>Size : L</h1>
-                    <h1 className='text-red-500 mt-1 font-bold'>$250.00</h1>
+                    <h1 className='text-gray-500 mt-1 font-bold'>$250.00</h1>
                 </div>
             </div>
             <div className='flex flex-row'>
@@ -90,16 +93,16 @@ const PaymentCart = () => {
                     <h1 className='text-[13px] font-bold'>Sample PRODUCT</h1>
                     <h1 className='text-[13px] font-bold'>Color : Red</h1>
                     <h1 className='text-[13px] font-bold'>Size : L</h1>
-                    <h1 className='text-red-500 mt-1 font-bold'>$250.00</h1>
+                    <h1 className='text-gray-500 mt-1 font-bold'>$250.00</h1>
                 </div>
             </div>
             <hr className='border border-gray-300'/>
             <div>
-                <h1 className='text-[12px] font-bold'>Sub Total <span className='ml-[100px] text-red-500'>$400.00</span></h1>
-                <h1 className='text-[12px] font-bold'>Shipping<span className='ml-[106px] text-red-500'>$200.00</span></h1>
+                <h1 className='text-[12px] font-bold'>Sub Total <span className='ml-[100px] text-gray-500'>$400.00</span></h1>
+                <h1 className='text-[12px] font-bold'>Shipping<span className='ml-[106px] text-gray-500'>$200.00</span></h1>
             </div>
             <div>
-            <h1 className='text-[14px] font-bold'>Total<span className='ml-[122px] text-red-500'>$200.00</span></h1>
+            <h1 className='text-[14px] font-bold'>Total<span className='ml-[122px] text-gray-500'>$200.00</span></h1>
             </div>
             
         </div>

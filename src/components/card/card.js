@@ -39,7 +39,7 @@ const Card = ({title}) => {
         </div>
         {/* close card description */}
         {/* Card price */}
-        <div className='text-red-500 ml-[20px] mt-[10px] font-bold text-[18px]'>
+        <div className='text-gray-600 ml-[20px] mt-[10px] font-bold text-[18px]'>
           <h1>$225.50</h1>
         </div>
         {/* Card price */}
@@ -78,7 +78,7 @@ const Card = ({title}) => {
         </div>
         {/* Close Card Description */}
         {/* Card Price  */}
-        <div className='text-red-500 ml-[20px] mt-[10px] font-bold text-[18px]'>
+        <div className='text-gray-600 ml-[20px] mt-[10px] font-bold text-[18px]'>
           <h1 className=''>$225.50</h1>
         </div>
         {/* Card Price  */}
@@ -116,7 +116,7 @@ const Card = ({title}) => {
         </div>
         {/* Close Card description */}
         {/* card price  */}
-        <div className='text-red-500 ml-[20px] mt-[10px] font-bold text-[18px] pb-2'>
+        <div className='text-gray-600 ml-[20px] mt-[10px] font-bold text-[18px] pb-2'>
           <h1>$225.50</h1>
         </div>
         {/* card price */}

@@ -11,7 +11,7 @@ const Chat = () => {
         {/* div inner container */}
         <div className={`w-[1320px] h-[540px] relative flex flex-row flex-wrap ${sidemenu ? 'left-[200px]':''}`}>
             <div className='w-[1320px] h-[540px]'>
-                <h1 className='text-red-700 font-bold text-[25px] ml-[45px] mt-[35px]'>Ongoing Chat</h1>
+                <h1 className='text-gray-700 font-bold text-[25px] ml-[45px] mt-[35px]'>Ongoing Chat</h1>
                 {/* white box div */}
                 <div className='ml-[40px]  bg-white w-[1320px] h-[540px] mt-[30px]'>
                 {/* table */}

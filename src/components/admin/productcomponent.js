@@ -48,9 +48,10 @@ const ProductComponent = ({select}) => {
        {/* Close Detailed Information */}
               {/* Documentation */}
               <div className='   bg-white w-[540px] h-[200px] mt-[100px]'>
-                <div className='z-10 relative top-4'>
-                  <svg style={{ color: 'rgb(185, 28, 28)',display:'inline',marginTop:'10px',marginLeft:'10px',float:'left'}} width='20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="100%" height="100%" fill="#0000"></rect><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="#b91c1c"></path></svg>
-                  <h1 className='text-red-700 inline font-bold text-[26px]'>Documentation</h1>
+                <div className='text-gray-600 z-10 relative top-4'>
+                <svg style={{display:'inline',marginTop:'10px',marginLeft:'10px',float:'left'}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+
+                  <h1 className='text-gray-600 inline font-bold text-[26px]'>Documentation</h1>
                 </div>
                 {/* table */}
                 <div className="overflow-x-auto">
@@ -158,26 +159,26 @@ const ProductComponent = ({select}) => {
                             <tbody>
                                 <tr className='text-blue-500 font-medium text-[14px] cursor-pointer'>
                                   <td>Lahore </td>
-                                  <td className='text-gray-700'>32</td>                
-                                  <td className='text-gray-700'>Purchased</td>
+                                  <td className='text-gray-600'>32</td>                
+                                  <td className='text-gray-600'>Purchased</td>
                                   <td>Al marhai</td>                    
                                 </tr>
                                 <tr className='text-blue-500 font-medium text-[14px] cursor-pointer'>
                                   <td>Lahore </td>
-                                  <td className='text-gray-700'>32</td>                
-                                  <td className='text-gray-700'>Purchased</td>
+                                  <td className='text-gray-600'>32</td>                
+                                  <td className='text-gray-600'>Purchased</td>
                                   <td>Al marhai</td>                    
                                 </tr>
                                 <tr className='text-blue-500 font-medium text-[14px] cursor-pointer'>
                                   <td>Lahore </td>
-                                  <td className='text-gray-700'>32</td>                
-                                  <td className='text-gray-700'>Purchased</td>
+                                  <td className='text-gray-600'>32</td>                
+                                  <td className='text-gray-600'>Purchased</td>
                                   <td>Al marhai</td>                    
                                 </tr>
                                 <tr className='text-blue-500 font-medium text-[14px] cursor-pointer'>
                                   <td>Lahore </td>
-                                  <td className='text-gray-700'>32</td>                
-                                  <td className='text-gray-700'>Purchased</td>
+                                  <td className='text-gray-600'>32</td>                
+                                  <td className='text-gray-600'>Purchased</td>
                                   <td>Al marhai</td>                    
                                 </tr>
 

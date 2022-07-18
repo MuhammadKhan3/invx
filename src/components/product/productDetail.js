@@ -19,9 +19,9 @@ const ProductDetail = () => {
   <Header/>
   <div className='grid grid-cols-1 w-[700px] divide-y relative left-[400px] top-[60px] '>
     <div className=''>
-       <h1 className='text-red-600  font-bold text-[25px] inline-block float-left'>DETAIL PRODUCT</h1>
+       <h1 className='text-gray-600  font-bold text-[25px] inline-block float-left'>DETAIL PRODUCT</h1>
        {/* Bread Crumbs */}
-       <div className="w-auto text-sm breadcrumbs text-red-500 text-[13px] inline-block ml-[200px]">
+       <div className="w-auto text-sm breadcrumbs text-gray-500 text-[13px] inline-block ml-[200px]">
         <ul>
             <li><a>Long text 1</a></li>
             <li><a>Long text 2</a></li>
@@ -103,7 +103,7 @@ const ProductDetail = () => {
                     <span className="bg-slate-700 text-white p-[3px] " onClick={incremenhandler}>+</span>
                 </div>
                 <div className='ml-[400px] mt-[20px]  '>
-                   <button className="btn btn-outline btn-error hover: text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg> <span className='ml-[10px] pl-5 pr-5'>Add To Cart</span></button>
+                   <button className="btn btn-outline btn-primary  hover: text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg> <span className='ml-[10px] pl-5 pr-5'>Add To Cart</span></button>
                 </div>
             </div>
             <hr className='mt-[30px]'/>

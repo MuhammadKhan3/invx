@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Card from '../card/card';
 import Header from '../header/header'
 
@@ -10,9 +11,9 @@ const Cart = () => {
   <Header/>
   <div className='grid grid-cols-1 w-[800px]  relative left-[400px] top-[60px] '>
     <div className=' mt-[40px]'>
-       <h1 className='text-red-600  font-bold text-[25px] inline-block float-left'>Your Cart</h1>
+       <h1 className='text-gray-600  font-bold text-[25px] inline-block float-left'>Your Cart</h1>
        {/* Bread Crumbs */}
-       <div className="w-auto text-sm breadcrumbs text-red-500 text-[13px] inline-block ml-[410px]">
+       <div className="w-auto text-sm breadcrumbs text-gray-500 text-[13px] inline-block ml-[410px]">
         <ul>
             <li><a>Long text 1</a></li>
             <li><a>Long text 2</a></li>
@@ -121,9 +122,9 @@ const Cart = () => {
        {/* Close Table */}
     </div>
     <div className='ml-[300px] mt-[40px] space-x-4'>
-        <button className='btn btn-outline btn-error hover:!text-white'>Continue Shopping</button>
+        <button className='btn btn-outline btn-primary hover:!text-white'>Countinue Shopping</button>
         <button className='p-3 rounded-md hover:bg-yellow-700 active:scale-[1.1] pr-7 pl-7 text-white bg-yellow-500'>Negotiate</button>
-        <button className='p-3 rounded-md hover:bg-red-700 active:scale-[1.1] pr-7 pl-7 text-white bg-red-500'> CheckOut</button>
+        <Link to='/checkout'><button className='p-3 rounded-md hover:bg-red-700 active:scale-[1.1] pr-7 pl-7 text-white bg-primary'> CheckOut</button></Link>
     </div>
     <hr className='mt-[30px]'/>
   {/* card component */}
