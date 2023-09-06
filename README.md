@@ -6,5 +6,3 @@
 ![inyx5](https://github.com/MuhammadKhan3/invx/assets/79418503/fd3bfd80-3239-4d72-b8b7-19aa89566b0b)
 ![inyx4](https://github.com/MuhammadKhan3/invx/assets/79418503/57df6cc4-e1bb-4f09-8341-9fb0bf70927f)
 ![inyx3](https://github.com/MuhammadKhan3/invx/assets/79418503/1ec013f6-dcd3-4e5a-bcaa-01e633c180d2)
-![invyx1](https://github.com/MuhammadKhan3/invx/assets/79418503/b2b17a9f-01a0-47ae-a887-e9a41113717c)
-![invy2](https://github.com/MuhammadKhan3/invx/assets/79418503/86da969d-06d3-4710-b58e-ddc6c4ea6e10)
